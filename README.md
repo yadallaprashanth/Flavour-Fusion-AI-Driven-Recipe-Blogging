@@ -20,3 +20,21 @@ Scenario 3: Developing a Gluten-Free Baking Recipe Blog
 
 A baker specializing in gluten-free recipes accesses the Flavor Fusion app to generate new content for their blog. They enter "Gluten-Free Bread" as the topic and select a 1500-word count. The app entertains with a joke during the content creation process. The AI delivers a comprehensive and well-detailed recipe. The baker reviews the high-quality content and publishes it on their gluten-free baking blog, confident it will be valuable to their readers.
 
+![unnamed](https://github.com/user-attachments/assets/92a4144e-65a4-4a6d-a749-f03c80eafab2)
+
+**Project Flow**
+Users input a topic and specify the desired length of the blog post through the Streamlit UI.
+The input topic and length are sent to the Gemini 1.5 Flash language model, which is integrated into the backend.
+Gemini 1.5 Flash processes the input and generates a blog post based on the user's specifications.
+The model autonomously creates a well-structured, engaging blog post tailored to the specified topic and word count.
+The generated blog post is sent back to the frontend for display on the Streamlit app.
+Users can customize the blog post further if desired and export or copy the content for their use.
+To accomplish this, we have to complete all the activities listed below,
+Initialize Gemini 1.5 Flash:
+Generate Gemini 1.5 Flash  API
+Initialize the pre-trained model
+Interfacing with Pre-trained Model
+Blog Generation
+Model Deployment
+Deploy the application using Streamlit
+
