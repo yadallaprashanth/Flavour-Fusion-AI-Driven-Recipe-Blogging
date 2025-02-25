@@ -23,6 +23,7 @@ A baker specializing in gluten-free recipes accesses the Flavor Fusion app to ge
 ![unnamed](https://github.com/user-attachments/assets/92a4144e-65a4-4a6d-a749-f03c80eafab2)
 
 **Project Flow**
+
 Users input a topic and specify the desired length of the blog post through the Streamlit UI.
 The input topic and length are sent to the Gemini 1.5 Flash language model, which is integrated into the backend.
 Gemini 1.5 Flash processes the input and generates a blog post based on the user's specifications.
