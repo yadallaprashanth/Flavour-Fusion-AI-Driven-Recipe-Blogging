@@ -25,18 +25,29 @@ A baker specializing in gluten-free recipes accesses the Flavor Fusion app to ge
 
 **Project Flow**
 
-Users input a topic and specify the desired length of the blog post through the Streamlit UI.
-The input topic and length are sent to the Gemini 1.5 Flash language model, which is integrated into the backend.
-Gemini 1.5 Flash processes the input and generates a blog post based on the user's specifications.
-The model autonomously creates a well-structured, engaging blog post tailored to the specified topic and word count.
-The generated blog post is sent back to the frontend for display on the Streamlit app.
+1. Users input a topic and specify the desired length of the blog post through the Streamlit UI.
+
+2. The input topic and length are sent to the Gemini 1.5 Flash language model, which is integrated into the backend.
+
+3. Gemini 1.5 Flash processes the input and generates a blog post based on the user's specifications.
+
+4. The model autonomously creates a well-structured, engaging blog post tailored to the specified topic and word count.
+
+5. The generated blog post is sent back to the frontend for display on the Streamlit app.
+
 Users can customize the blog post further if desired and export or copy the content for their use.
+
 To accomplish this, we have to complete all the activities listed below,
-Initialize Gemini 1.5 Flash:
-Generate Gemini 1.5 Flash  API
-Initialize the pre-trained model
-Interfacing with Pre-trained Model
-Blog Generation
-Model Deployment
-Deploy the application using Streamlit
+
+1. Initialize Gemini 1.5 Flash:
+
+2. Generate Gemini 1.5 Flash  API
+
+3. Initialize the pre-trained model
+
+4. Interfacing with Pre-trained Model
+    Blog Generation
+
+5. Model Deployment
+    Deploy the application using Streamlit
 
