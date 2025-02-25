@@ -20,6 +20,7 @@ Scenario 3: Developing a Gluten-Free Baking Recipe Blog
 
 A baker specializing in gluten-free recipes accesses the Flavor Fusion app to generate new content for their blog. They enter "Gluten-Free Bread" as the topic and select a 1500-word count. The app entertains with a joke during the content creation process. The AI delivers a comprehensive and well-detailed recipe. The baker reviews the high-quality content and publishes it on their gluten-free baking blog, confident it will be valuable to their readers.
 
+
 ![unnamed](https://github.com/user-attachments/assets/92a4144e-65a4-4a6d-a749-f03c80eafab2)
 
 **Project Flow**
