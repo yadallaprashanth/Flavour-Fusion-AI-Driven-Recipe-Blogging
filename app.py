@@ -64,4 +64,4 @@ def main():
             st.warning("Please enter a topic and word count.")
 
 if __name__ == "__main__":
-    main()
+    main()
