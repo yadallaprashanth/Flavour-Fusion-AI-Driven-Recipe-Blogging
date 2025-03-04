@@ -1,18 +1,7 @@
 import streamlit as st
 import google.generativeai as genai
 import random
-
-
-api_key = "AIzaSyAvyqiMDkyZg1ugNo0NxlFhsPV0CEXLs7w"
-genai.configure(api_key=api_key)
-
-generation_config = {
-    "temperature": 0.75,
-    "top_p": 0.95,
-    "top_k": 64,
-    "max_output_tokens": 8192,
-    "response_mime_type": "text/plain",
-}
+from config import GENERATION_CONFIG  
 
 
 def get_joke():
@@ -26,14 +15,13 @@ def get_joke():
     return random.choice(jokes)
 
 
-
 def generate_recipe(topic, word_count):
+    """Generates an AI-powered recipe blog using Google Generative AI."""
     try:
-        st.write("🍽 Generating your recipe...")        
+        st.write("🍽 Generating your recipe...")
         st.write(f"🤖 While I work on your blog, here's a joke for you: \n\n {get_joke()}")
 
         chat_session = genai.GenerativeModel("gemini-1.5-flash").start_chat()
-
         prompt = f"Write a recipe blog on '{topic}' with {word_count} words."
         response = chat_session.send_message(prompt)
 
@@ -44,11 +32,9 @@ def generate_recipe(topic, word_count):
         return None
 
 
-
-
 def main():
+    """Main function to run the Streamlit app."""
     st.title("Flavour Fusion: AI-Driven Recipe Blogging 🍲🤖")
-
     st.write("### Generate AI-powered recipe blogs with ease!")
 
     topic = st.text_input("Enter your recipe topic:", placeholder="e.g., Vegan Chocolate Cake")
@@ -62,6 +48,7 @@ def main():
                 st.download_button("Download Recipe", recipe, file_name=f"{topic}.txt")
         else:
             st.warning("Please enter a topic and word count.")
+
 
 if __name__ == "__main__":
     main()
