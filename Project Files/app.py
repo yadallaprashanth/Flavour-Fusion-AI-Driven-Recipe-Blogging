@@ -2,8 +2,8 @@ import streamlit as st
 import google.generativeai as genai
 import random
 
-# Load API key securely
-api_key = st.secrets["gemini_api_key"]
+
+api_key = "AIzaSyAt8uQEHa4h2qWtdxmn_mWzNkCEJGTwQbM"
 genai.configure(api_key=api_key)
 
 generation_config = {
@@ -13,6 +13,7 @@ generation_config = {
     "max_output_tokens": 8192,
     "response_mime_type": "text/plain",
 }
+
 
 def get_joke():
     jokes = [
@@ -24,12 +25,15 @@ def get_joke():
     ]
     return random.choice(jokes)
 
+
+
 def generate_recipe(topic, word_count):
     try:
         st.write("🍽 Generating your recipe...")        
         st.write(f"🤖 While I work on your blog, here's a joke for you: \n\n {get_joke()}")
 
         chat_session = genai.GenerativeModel("gemini-1.5-flash").start_chat()
+
         prompt = f"Write a recipe blog on '{topic}' with {word_count} words."
         response = chat_session.send_message(prompt)
 
@@ -39,8 +43,12 @@ def generate_recipe(topic, word_count):
         st.error(f"Error generating blog: {e}")
         return None
 
+
+
+
 def main():
     st.title("Flavour Fusion: AI-Driven Recipe Blogging 🍲🤖")
+
     st.write("### Generate AI-powered recipe blogs with ease!")
 
     topic = st.text_input("Enter your recipe topic:", placeholder="e.g., Vegan Chocolate Cake")
@@ -56,4 +64,4 @@ def main():
             st.warning("Please enter a topic and word count.")
 
 if __name__ == "__main__":
-    main()
+    main()
