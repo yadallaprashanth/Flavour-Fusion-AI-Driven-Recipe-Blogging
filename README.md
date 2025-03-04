@@ -2,6 +2,14 @@
 
 Category: Cloud Application Development
 
+# Deploy App Link :
+
+https://flavour-fusion-ai-driven-recipe-blogging-bhjxeemj7scffpkfnnszm.streamlit.app/
+
+# Video Demo Link:
+
+https://drive.google.com/file/d/1X660lf3XfLzYXuBHQpJzxfQnV_E7zmHI/view?usp=drive_link
+
 Skills Required: Machine Learning
 
 Project Description:
