@@ -10,6 +10,10 @@ https://flavour-fusion-ai-driven-recipe-blogging-bhjxeemj7scffpkfnnszm.streamlit
 
 https://drive.google.com/file/d/1X660lf3XfLzYXuBHQpJzxfQnV_E7zmHI/view?usp=drive_link
 
+# Document File Link :
+
+https://drive.google.com/file/d/1G2l2CT0u-7m-O47P2QuFsc_pFJu7nbQH/view?usp=sharing
+
 Skills Required: Machine Learning
 
 Project Description:
